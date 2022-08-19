@@ -1,3 +1,5 @@
+/// <reference types="cypress"/>
+
 import LoginPage from "../../pages/CMS/LoginPage";
 
 describe('Login Page Test', () => {
