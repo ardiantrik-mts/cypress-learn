@@ -1,18 +1,18 @@
 class LoginPage{
     userNameTextField(){
-        return cy.xpath('//input[@id="UserName"]')
+        return cy.xpath('//input[@id="user-name"]')
     }
 
     passwordTextField(){
-        return cy.xpath('//input[@id="Password"]')
+        return cy.xpath('//input[@id="password"]')
     }
 
     loginButton(){
-        return cy.xpath('//button[@id="btn-login"]')
+        return cy.xpath('//input[@id="login-button"]')
     }
 
     alertInvalid(){
-        return cy.xpath('//div[@class="uk-alert-danger uk-alert"]')
+        return cy.xpath('//div[@class="error-message-container error"]')
         // return cy.xpath('//li[text()="Incorrect User ID or Password."]')
     }
 
