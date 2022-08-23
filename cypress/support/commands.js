@@ -32,9 +32,9 @@ Cypress.Commands.add('loginSauceDemo', (username,password) => {
     let inventoryPage = new InventoryPage()
     
     cy.visit('https://www.saucedemo.com/')
-    loginPage.userNameTextField().type(username)
-    loginPage.passwordTextField().type(password)
-    loginPage.loginButton().click().wait(1000)
+    loginPage.textfieldUsername().type(username)
+    loginPage.textfieldPassword().type(password)
+    loginPage.buttonLogin().click().wait(1000)
 
     //Assert
     inventoryPage.containerInventoryList().should('be.visible')
