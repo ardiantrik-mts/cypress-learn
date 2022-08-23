@@ -1,13 +1,13 @@
 class LoginPage{
-    userNameTextField(){
+    textfieldUsername(){
         return cy.xpath('//input[@id="user-name"]')
     }
 
-    passwordTextField(){
+    textfieldPassword(){
         return cy.xpath('//input[@id="password"]')
     }
 
-    loginButton(){
+    buttonLogin(){
         return cy.xpath('//input[@id="login-button"]')
     }
 
