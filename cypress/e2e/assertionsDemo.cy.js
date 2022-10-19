@@ -8,6 +8,6 @@ describe('Assertion Test', () => {
     it('Assertion Title', () => {
         // let homePage = new HomePage()
 
-        cy.xpath('//body//flt-glass-pane').wait(10000).click()
+        cy.xpath('//flt-glass-pane').wait(15000).click()
     })
   })
